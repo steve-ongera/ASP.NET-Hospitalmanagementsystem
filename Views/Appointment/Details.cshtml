@@ -1,0 +1,17 @@
+@model HospitalManagementSystem.Models.Appointment
+
+@{
+    ViewData["Title"] = "Appointment Details";
+}
+
+<h2>Appointment Details</h2>
+
+<div>
+    <h4>@Model.Patient.Name with Dr. @Model.Doctor.Name</h4>
+    <p><strong>Date:</strong> @Model.AppointmentDate.ToString("yyyy-MM-dd")</p>
+    <p><strong>Time:</strong> @Model.AppointmentTime.ToString("hh:mm tt")</p>
+    <p><strong>Status:</strong> @Model.Status</p>
+</div>
+
+<a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Edit</a>
+<a asp-action="Index" class="btn btn-secondary">Back</a>

@@ -1,0 +1,22 @@
+@model IEnumerable<Doctor>
+
+<h2>Doctors</h2>
+<a href="/Doctor/Create">Add Doctor</a>
+
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <th>Specialty</th>
+        <th>Phone</th>
+        <th>Email</th>
+    </tr>
+    @foreach (var doctor in Model)
+    {
+        <tr>
+            <td>@doctor.Name</td>
+            <td>@doctor.Specialty</td>
+            <td>@doctor.Phone</td>
+            <td>@doctor.Email</td>
+        </tr>
+    }
+</table>

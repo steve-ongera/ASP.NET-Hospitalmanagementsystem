@@ -1,0 +1,17 @@
+@model HospitalManagementSystem.Models.Appointment
+
+@{
+    ViewData["Title"] = "Cancel Appointment";
+}
+
+<h2>Cancel Appointment</h2>
+
+<div>
+    <p>Are you sure you want to cancel the appointment for <strong>@Model.Patient.Name</strong> with Dr. <strong>@Model.Doctor.Name</strong>?</p>
+</div>
+
+<form asp-action="DeleteConfirmed">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger">Cancel Appointment</button>
+    <a asp-action="Index" class="btn btn-secondary">Back</a>
+</form>
