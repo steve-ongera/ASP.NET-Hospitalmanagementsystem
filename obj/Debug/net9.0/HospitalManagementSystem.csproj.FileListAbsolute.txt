@@ -1,8 +1,0 @@
-C:\Users\Cley\Desktop\Complete Projects\NETFRAMEWORK-PROJECTS\HospitalManagementSystem\obj\Debug\net9.0\HospitalManagementSystem.csproj.AssemblyReference.cache
-C:\Users\Cley\Desktop\Complete Projects\NETFRAMEWORK-PROJECTS\HospitalManagementSystem\obj\Debug\net9.0\HospitalManagementSystem.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Cley\Desktop\Complete Projects\NETFRAMEWORK-PROJECTS\HospitalManagementSystem\obj\Debug\net9.0\HospitalManagementSystem.AssemblyInfoInputs.cache
-C:\Users\Cley\Desktop\Complete Projects\NETFRAMEWORK-PROJECTS\HospitalManagementSystem\obj\Debug\net9.0\HospitalManagementSystem.AssemblyInfo.cs
-C:\Users\Cley\Desktop\Complete Projects\NETFRAMEWORK-PROJECTS\HospitalManagementSystem\obj\Debug\net9.0\HospitalManagementSystem.csproj.CoreCompileInputs.cache
-C:\Users\Cley\Desktop\Complete Projects\NETFRAMEWORK-PROJECTS\HospitalManagementSystem\obj\Debug\net9.0\HospitalManagementSystem.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Cley\Desktop\Complete Projects\NETFRAMEWORK-PROJECTS\HospitalManagementSystem\obj\Debug\net9.0\HospitalManagementSystem.RazorAssemblyInfo.cache
-C:\Users\Cley\Desktop\Complete Projects\NETFRAMEWORK-PROJECTS\HospitalManagementSystem\obj\Debug\net9.0\HospitalManagementSystem.RazorAssemblyInfo.cs

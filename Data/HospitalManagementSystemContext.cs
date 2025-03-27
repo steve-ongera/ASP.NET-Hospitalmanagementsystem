@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using HospitalManagementSystem.Models;
 
 namespace HospitalManagementSystem.Data
 {
@@ -6,7 +7,9 @@ namespace HospitalManagementSystem.Data
     {
         public HospitalManagementSystemContext(DbContextOptions<HospitalManagementSystemContext> options) : base(options) { }
 
-        public DbSet<HospitalManagementSystem.Models.Patient> Patients { get; set; }
-        public DbSet<HospitalManagementSystem.Models.Appointment> Appointments { get; set; }
+        public DbSet<Patient> Patients { get; set; }
+        public DbSet<Doctor> Doctors { get; set; }
+
+        public DbSet<Appointment> Appointments { get; set; }
     }
 }

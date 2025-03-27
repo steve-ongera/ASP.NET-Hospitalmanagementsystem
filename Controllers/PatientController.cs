@@ -50,17 +50,20 @@ namespace HospitalManagementSystem.Controllers
         // POST: Patient/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Age,Gender,Phone,Address,MedicalHistory")] Patient patient)
+        public async Task<IActionResult> Create(Patient patient)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(patient);
+                _context.Patients.Add(patient);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
             return View(patient);
         }
 
+
+
+        
         // GET: Patient/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
@@ -80,7 +83,7 @@ namespace HospitalManagementSystem.Controllers
         // POST: Patient/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Age,Gender,Phone,Address,MedicalHistory")] Patient patient)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,DateOfBirth,Phone,Email,Address,Age,Gender")] Patient patient)
         {
             if (id != patient.Id)
             {
@@ -96,7 +99,7 @@ namespace HospitalManagementSystem.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!PatientExists(patient.Id))
+                    if (!_context.Patients.Any(e => e.Id == patient.Id))
                     {
                         return NotFound();
                     }
@@ -109,6 +112,7 @@ namespace HospitalManagementSystem.Controllers
             }
             return View(patient);
         }
+
 
         // GET: Patient/Delete/5
         public async Task<IActionResult> Delete(int? id)
