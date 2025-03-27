@@ -4,14 +4,74 @@
     ViewData["Title"] = "Patient Details";
 }
 
-<h2>Patient Details</h2>
+<style>
+    .details-container {
+        max-width: 600px;
+        margin: 40px auto;
+        background-color: #f9f9f9;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
 
-<div>
+    .details-container h2 {
+        text-align: center;
+        margin-bottom: 25px;
+        color: #333;
+    }
+
+    .details-container h4 {
+        margin-bottom: 15px;
+        color: #007bff;
+    }
+
+    .details-container p {
+        font-size: 16px;
+        color: #555;
+        margin-bottom: 10px;
+    }
+
+    .btn-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .btn-custom {
+        padding: 8px 20px;
+        border-radius: 5px;
+        font-size: 14px;
+        text-decoration: none;
+        color: white;
+    }
+
+    .btn-warning {
+        background-color: #ffc107;
+        border: none;
+    }
+
+    .btn-secondary {
+        background-color: #6c757d;
+        border: none;
+    }
+
+    .btn-warning:hover,
+    .btn-secondary:hover {
+        opacity: 0.9;
+    }
+</style>
+
+<div class="details-container">
+    <h2>Patient Details</h2>
+
     <h4>@Model.Name</h4>
     <p><strong>Age:</strong> @Model.Age</p>
     <p><strong>Gender:</strong> @Model.Gender</p>
     <p><strong>Phone:</strong> @Model.Phone</p>
-</div>
 
-<a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Edit</a>
-<a asp-action="Index" class="btn btn-secondary">Back</a>
+    <div class="btn-container">
+        <a asp-action="Edit" asp-route-id="@Model.Id" class="btn-custom btn-warning">Edit</a>
+        <a asp-action="Index" class="btn-custom btn-secondary">Back</a>
+    </div>
+</div>

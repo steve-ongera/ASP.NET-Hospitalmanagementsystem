@@ -1,22 +1,93 @@
 @model IEnumerable<Doctor>
 
-<h2>Doctors</h2>
-<a href="/Doctor/Create">Add Doctor</a>
+@{
+    ViewData["Title"] = "Doctors";
+}
 
-<table border="1">
-    <tr>
-        <th>Name</th>
-        <th>Specialty</th>
-        <th>Phone</th>
-        <th>Email</th>
-    </tr>
-    @foreach (var doctor in Model)
-    {
-        <tr>
-            <td>@doctor.Name</td>
-            <td>@doctor.Specialty</td>
-            <td>@doctor.Phone</td>
-            <td>@doctor.Email</td>
-        </tr>
+<style>
+    .container {
+        max-width: 900px;
+        margin: 40px auto;
+        background-color: #ffffff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        font-family: 'Segoe UI', sans-serif;
     }
-</table>
+
+    h2 {
+        text-align: center;
+        margin-bottom: 25px;
+        color: #2c3e50;
+    }
+
+    .add-btn {
+        display: inline-block;
+        margin-bottom: 20px;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    .add-btn:hover {
+        background-color: #0056b3;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+    }
+
+    th, td {
+        padding: 12px 15px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #f0f2f5;
+        color: #333;
+    }
+
+    tr:nth-child(even) {
+        background-color: #fafafa;
+    }
+
+    tr:hover {
+        background-color: #f1f1f1;
+    }
+
+    td {
+        border-bottom: 1px solid #ddd;
+    }
+</style>
+
+<div class="container">
+    <h2>Doctors</h2>
+    <a href="/Doctor/Create" class="add-btn">Add Doctor</a>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Specialty</th>
+                <th>Phone</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var doctor in Model)
+            {
+                <tr>
+                    <td>@doctor.Name</td>
+                    <td>@doctor.Specialty</td>
+                    <td>@doctor.Phone</td>
+                    <td>@doctor.Email</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

@@ -17,5 +17,6 @@ app.MapControllerRoute(
             name: "default",
             pattern: "{controller=Home}/{action=Index}/{id?}");
 
-            
+
+app.UseStaticFiles(); // This enables serving static files            
 app.Run();

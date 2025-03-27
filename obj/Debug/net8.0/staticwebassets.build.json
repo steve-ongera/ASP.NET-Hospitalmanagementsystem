@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "i86STUvEnGZmOyuQN0AdCYEtKpb0oIq3AMx6eS0d3Os=",
+  "Hash": "u5NgC9WsCoOErjo/C3YqBCtDV/kAeTcrfOoWCCto4sM=",
   "Source": "HospitalManagementSystem",
   "BasePath": "_content/HospitalManagementSystem",
   "Mode": "Default",
@@ -1333,8 +1333,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "b9sayid5wm",
-      "Integrity": "j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=",
+      "Fingerprint": "71jj86tb4b",
+      "Integrity": "G1dMLkMfiuoz5kd31Y0mYvHb1fyHYFHNIGgDroBse1A=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -2644,7 +2644,7 @@
   ],
   "Endpoints": [
     {
-      "Route": "css/site.b9sayid5wm.css",
+      "Route": "css/site.71jj86tb4b.css",
       "AssetFile": "C:\\Users\\Cley\\Desktop\\Complete Projects\\NETFRAMEWORK-PROJECTS\\HospitalManagementSystem\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2654,7 +2654,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "667"
+          "Value": "4238"
         },
         {
           "Name": "Content-Type",
@@ -2662,11 +2662,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
+          "Value": "\"G1dMLkMfiuoz5kd31Y0mYvHb1fyHYFHNIGgDroBse1A=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 26 Mar 2025 16:40:39 GMT"
+          "Value": "Thu, 27 Mar 2025 12:35:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2676,7 +2676,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "b9sayid5wm"
+          "Value": "71jj86tb4b"
         },
         {
           "Name": "label",
@@ -2684,7 +2684,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
+          "Value": "sha256-G1dMLkMfiuoz5kd31Y0mYvHb1fyHYFHNIGgDroBse1A="
         }
       ]
     },
@@ -2699,7 +2699,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "667"
+          "Value": "4238"
         },
         {
           "Name": "Content-Type",
@@ -2707,11 +2707,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
+          "Value": "\"G1dMLkMfiuoz5kd31Y0mYvHb1fyHYFHNIGgDroBse1A=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 26 Mar 2025 16:40:39 GMT"
+          "Value": "Thu, 27 Mar 2025 12:35:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2721,7 +2721,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
+          "Value": "sha256-G1dMLkMfiuoz5kd31Y0mYvHb1fyHYFHNIGgDroBse1A="
         }
       ]
     },
@@ -2830,7 +2830,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 26 Mar 2025 23:28:29 GMT"
+          "Value": "Thu, 27 Mar 2025 12:42:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2867,7 +2867,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 26 Mar 2025 23:28:29 GMT"
+          "Value": "Thu, 27 Mar 2025 12:42:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2904,7 +2904,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 26 Mar 2025 23:28:29 GMT"
+          "Value": "Thu, 27 Mar 2025 12:42:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2949,7 +2949,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 26 Mar 2025 23:28:29 GMT"
+          "Value": "Thu, 27 Mar 2025 12:42:43 GMT"
         },
         {
           "Name": "Cache-Control",

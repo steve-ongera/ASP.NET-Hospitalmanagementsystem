@@ -12,12 +12,13 @@ namespace HospitalManagementSystem.Models
         [Required]
         [ForeignKey("Patient")]
         public int PatientId { get; set; }
-        public virtual Patient Patient { get; set; } // Navigation property
+        
+        public required virtual Patient Patient { get; set; } // Navigation property
 
         [Required]
         [ForeignKey("Doctor")]
         public int DoctorId { get; set; }
-        public virtual Doctor Doctor { get; set; } // Navigation property
+        public required virtual Doctor Doctor { get; set; } // Navigation property
 
         [Required]
         [DataType(DataType.Date)]
@@ -29,6 +30,6 @@ namespace HospitalManagementSystem.Models
 
         [Required]
         [StringLength(50)]
-        public string Status { get; set; } // E.g., "Scheduled", "Completed", "Canceled"
+        public required string Status { get; set; } // E.g., "Scheduled", "Completed", "Canceled"
     }
 }

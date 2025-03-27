@@ -1,6 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Linq;
-using Microsoft.AspNetCore.Mvc;
 using HospitalManagementSystem.Models; 
 
 namespace HospitalManagementSystem.Controllers

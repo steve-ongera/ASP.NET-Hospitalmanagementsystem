@@ -4,14 +4,71 @@
     ViewData["Title"] = "Delete Patient";
 }
 
-<h2>Delete Patient</h2>
+<style>
+    .delete-container {
+        max-width: 600px;
+        margin: 50px auto;
+        background-color: #fff5f5;
+        border: 1px solid #f5c2c7;
+        border-radius: 10px;
+        padding: 30px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        font-family: 'Segoe UI', sans-serif;
+    }
 
-<div>
-    <p>Are you sure you want to delete <strong>@Model.Name</strong>?</p>
+    .delete-container h2 {
+        color: #c82333;
+        margin-bottom: 20px;
+    }
+
+    .delete-message {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    .delete-actions {
+        display: flex;
+        gap: 15px;
+    }
+
+    .btn-danger {
+        background-color: #dc3545;
+        border: none;
+        padding: 10px 20px;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .btn-danger:hover {
+        background-color: #bd2130;
+    }
+
+    .btn-secondary {
+        background-color: #6c757d;
+        border: none;
+        padding: 10px 20px;
+        color: white;
+        border-radius: 5px;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .btn-secondary:hover {
+        background-color: #5a6268;
+    }
+</style>
+
+<div class="delete-container">
+    <h2>Delete Patient</h2>
+
+    <div class="delete-message">
+        Are you sure you want to delete <strong>@Model.Name</strong>?
+    </div>
+
+    <form asp-action="DeleteConfirmed" class="delete-actions">
+        <input type="hidden" asp-for="Id" />
+        <button type="submit" class="btn-danger">Delete</button>
+        <a asp-action="Index" class="btn-secondary">Cancel</a>
+    </form>
 </div>
-
-<form asp-action="DeleteConfirmed">
-    <input type="hidden" asp-for="Id" />
-    <button type="submit" class="btn btn-danger">Delete</button>
-    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
-</form>
